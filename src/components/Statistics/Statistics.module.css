@@ -1,8 +1,6 @@
 .statistics {
   width: 500px;
-  background-color: rgb(228, 226, 226);
-  /* width: 400px; */
-  /* padding-top: 100px; */
+  background-color: #e4e2e2;
   text-align: center;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -14,8 +12,7 @@
 }
 
 .statList {
-  /* width: 500px; */
-  background-color: aliceblue;
+  background-color: #f0f8ff;
   display: flex;
   list-style: none;
   padding: 0;
@@ -24,9 +21,13 @@
 }
 
 .label{
-    font-size: 25px;
+    font-size: 22px;
     margin-bottom: 8px;
-    /* line-height: 50px; */
+}
+
+
+.percentage{
+    font-size: 35px;
 }
 
 .item{
@@ -36,6 +37,5 @@
     align-items: center;
     width: 20%;
     height: 100px;
-    border: 1px solid rgb(204, 202, 202);
-    /* color: rgb(80, 35, 241); */
+    border: 1px solid #cccaca;
 }

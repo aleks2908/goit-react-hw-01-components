@@ -1,6 +1,5 @@
 .profile{
-    background-color: rgb(228, 226, 226);
-    /* width: 400px; */
+    background-color: #e4e2e2;
     padding-top: 100px;
     text-align: center;
     margin-top: 100px;
@@ -11,11 +10,12 @@
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
 }
 
 .description{
     line-height: 24px;
+    padding-bottom: 60px;
 }
 
 .name{
@@ -25,14 +25,11 @@
 
 .stats{
     width: 500px;
-    background-color: aliceblue;
+    background-color: #f0f8ff;
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
-    /* justify-content: space-evenly; */
-    /* gap: 50px; */
-    /* padding: 50px; */
 }
 
 .item{
@@ -42,7 +39,7 @@
     align-items: center;
     width: 33.33%;
     height: 140px;
-    border: 1px solid rgb(204, 202, 202);
+    border: 1px solid #cccaca;
 }
 
 

@@ -1,0 +1,20 @@
+.name {
+  margin: 0;
+}
+
+.avatar {
+  margin: 0 20px;
+  height: 120px;
+}
+
+.status {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 20px;
+  background-color: #ff0000;
+}
+
+.isOnline {
+  background-color: #008000;
+}

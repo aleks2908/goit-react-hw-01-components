@@ -1,16 +1,17 @@
 import { Profile } from './Profile/Profile';
-import user from '../user.json';
-import data from '../data.json';
 import { Statistics } from './Statistics/Statistics';
-import friends from '../friends.json';
-import { FriendList } from './FriendList/FriendList';
+import { FriendList } from './FriendList/FriendList/FriendList';
+import { TransactionList } from './TransactionHistory/TransactionList/TransactionList';
+import user from '../data/user.json';
+import data from '../data/data.json';
+import friends from '../data/friends.json';
+import transactions from '../data/transactions.json';
 
 export const App = () => {
   return (
     <>
       <div
         style={{
-          // height: '100vh',
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
@@ -22,7 +23,6 @@ export const App = () => {
       </div>
       <div
         style={{
-          // height: '100vh',
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
@@ -34,7 +34,6 @@ export const App = () => {
       </div>
       <div
         style={{
-          // height: '100vh',
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
@@ -43,6 +42,17 @@ export const App = () => {
         }}
       >
         <FriendList friends={friends} />
+      </div>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          fontSize: 20,
+          color: '#010101',
+        }}
+      >
+        <TransactionList items={transactions} />
       </div>
     </>
   );
