@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
 import css from './FriendListItem.module.css';
 
-export const FriendListItem = ({ friend: { isOnline, avatar, name } }) => {
+export const FriendListItem = ({ friend: { isOnline, avatar, name, id } }) => {
   return (
-    <>
+    <li className={css.item} key={id}>
       <span
         className={isOnline ? `${css.status} ${css.isOnline}` : css.status}
       ></span>
       <img className={css.avatar} src={avatar} alt="User avatar" width="120" />
       <p className={css.name}>{name}</p>
-    </>
+    </li>
   );
 };
 
@@ -21,5 +21,3 @@ FriendListItem.propTypes = {
     id: PropTypes.number.isRequired,
   }).isRequired,
 };
-
-
