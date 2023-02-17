@@ -5,9 +5,7 @@ export const FriendListItem = ({ friend: { isOnline, avatar, name } }) => {
   // console.log(id);
   return (
     <li className={css.item}>
-      <span
-        className={isOnline ? `${css.status} ${css.isOnline}` : css.status}
-      ></span>
+      <span className={isOnline ? css.isOnline : css.status}></span>
       <img className={css.avatar} src={avatar} alt="User avatar" width="120" />
       <p className={css.name}>{name}</p>
     </li>

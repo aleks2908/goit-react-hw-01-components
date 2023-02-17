@@ -26,5 +26,6 @@
 }
 
 .isOnline {
+  composes: status;
   background-color: #008000;
 }
